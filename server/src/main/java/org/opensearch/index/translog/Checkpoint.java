@@ -59,7 +59,7 @@ import java.nio.file.Path;
  *
  * @opensearch.internal
  */
-final class Checkpoint {
+public final class Checkpoint {
 
     final long offset;
     final int numOps;

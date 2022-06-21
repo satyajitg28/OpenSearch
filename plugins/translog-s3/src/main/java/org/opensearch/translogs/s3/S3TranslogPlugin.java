@@ -9,11 +9,12 @@
 package org.opensearch.translogs.s3;
 
 import org.opensearch.plugins.Plugin;
+import org.opensearch.plugins.TranslogPlugin;
 
 /**
  * A plugin to add a translog type that writes to and from AWS S3.
  */
-public class S3TranslogPlugin extends Plugin {
+public class S3TranslogPlugin extends Plugin implements TranslogPlugin {
 
     /**
      * Dummy empty constructor
